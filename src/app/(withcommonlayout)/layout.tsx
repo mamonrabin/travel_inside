@@ -1,3 +1,5 @@
+import Navbar from "@/src/components/header/Navbar";
+
 export default async function layout({
   children,
 }: Readonly<{
@@ -5,6 +7,7 @@ export default async function layout({
 }>) {
   return (
     <div className="">
+      <Navbar/>
       {children}
       {/* <TopFooter/> */}
     </div>
