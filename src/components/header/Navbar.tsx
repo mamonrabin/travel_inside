@@ -11,7 +11,7 @@ import { menuItems } from "@/src/share/MenuItems";
 
 const Navbar = () => {
   return (
-    <nav className="Container flex items-center justify-between py-4 border-b border-[#262626]/12">
+    <nav className="Container relative z-50 flex items-center justify-between py-4 border-b border-[#262626]/12">
       
       {/* Logo */}
       <Link href="/" className="lg:flex hidden">

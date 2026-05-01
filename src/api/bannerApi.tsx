@@ -1,3 +1,6 @@
+import img01 from "@/src/assets/banner/banner01.webp";
+import img02 from "@/src/assets/banner/banner02.webp";
+
 export const bannerList = [
   {
     id: 1,
@@ -5,6 +8,7 @@ export const bannerList = [
     title: "ঘুরে আসুন সুন্দর বাংলাদেশ",
     description:
       "বাস, ট্রেন বা বিমানে বাংলাদেশের যেকোনো প্রান্তে ভ্রমণ করুন। আমরা প্রদান করি সম্পূর্ণ দেশীয় ট্যুর প্যাকেজ, টিকেট বুকিং এবং হোটেল সুবিধা।",
+    image: img01,
   },
   {
     id: 2,
@@ -12,5 +16,6 @@ export const bannerList = [
     title: "চলুন ঘুরে দেখি বাংলাদেশ",
     description:
       "বাস, ট্রেন কিংবা বিমানে বাংলাদেশের যেকোনো স্থানে ভ্রমণ করুন। আমরা দিচ্ছি দেশজুড়ে ট্যুর প্যাকেজ, টিকিট বুকিং ও হোটেল সুবিধা",
+    image: img02,
   },
 ];
