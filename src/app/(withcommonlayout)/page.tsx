@@ -1,4 +1,5 @@
 
+import Destination from '@/src/components/Destination';
 import Banner from '@/src/components/home/banner/Banner';
 import Facility from '@/src/components/home/Facility';
 import Package from '@/src/components/home/Package';
@@ -16,6 +17,7 @@ const page = () => {
       <TravelArragment/>
       <WorkStep/>
       <WhyUs/>
+      <Destination/>
     </div>
   );
 };
