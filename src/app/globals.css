@@ -26,6 +26,13 @@
 .custom-pagination .swiper-pagination-bullet-active {
   @apply bg-[#1299E8]!   scale-110;
 }
+.custom-pagination2 .swiper-pagination-bullet {
+  @apply w-2.5 h-2.5 bg-white! opacity-100!  border border-[#262626]/50  rounded-full transition-all duration-300;
+}
+
+.custom-pagination2 .swiper-pagination-bullet-active {
+  @apply bg-[#1299E8]!   scale-110;
+}
 
 @theme inline {
   --color-background: var(--background);

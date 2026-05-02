@@ -5,7 +5,7 @@ import { FaCheck } from 'react-icons/fa';
 
 const TravelArragment = () => {
     return (
-       <div className="Container mt-10 pb-10">
+       <div className="Container mt-10">
       <SectionHead
         title="যাতায়াত ব্যবস্থা"
         description="আপনার পছন্দ অনুযায়ী বাস, ট্রেন বা বিমানে ভ্রমণ করুন এবং আপনার যাত্রা শুরু করুন সহজে এবং আরামে।"
