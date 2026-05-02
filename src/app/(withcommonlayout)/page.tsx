@@ -1,6 +1,7 @@
 
 import Banner from '@/src/components/home/banner/Banner';
 import Facility from '@/src/components/home/Facility';
+import Package from '@/src/components/home/Package';
 import React from 'react';
 
 const page = () => {
@@ -8,6 +9,7 @@ const page = () => {
     <div>
       <Banner/>
       <Facility/>
+      <Package/>
     </div>
   );
 };

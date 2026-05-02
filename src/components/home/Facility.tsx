@@ -5,13 +5,13 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Facility = () => {
   return (
-    <div className="Container mt-10 pb-10">
+    <div className="Container mt-10">
       <SectionHead
         title="আমাদের সেবা সমূহ"
         description="আপনার ভ্রমণকে সহজ করতে আমরা প্রদান করি সম্পূর্ণ সেবা"
       />
 
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3 mt-4">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3 mt-3">
         {facilityList.map((item) => (
           <div key={item.id} className="flex group flex-col text-center items-center gap-2 p-10 border hover:border-[#55BEEF] duration-300 cursor-pointer rounded-lg">
         
