@@ -11,14 +11,14 @@ import "swiper/css/pagination";
 const WorkStep = () => {
   const swiperRef = useRef<SwiperType | null>(null);
   return (
-    <div className="Container md:mt-10 mt-4 pb-10">
+    <div className="Container md:mt-10 mt-4">
       <SectionHead
         title="কাজের ধাপ"
         description="মাত্র ৪টি সহজ ধাপে আপনার ভ্রমণ বুক করুন এবং আপনার যাত্রা শুরু করুন।"
       />
 
       <div>
-        <div className="relative md:mt-6 mt-2">
+        <div className="relative md:mt-4 mt-2">
           <Swiper
             slidesPerView={2}
             spaceBetween={8}
@@ -42,7 +42,7 @@ const WorkStep = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="custom-pagination2  flex justify-center gap-2 z-20 relative md:top-5! top-6!"></div>
+          <div className="custom-pagination2  flex justify-center gap-1 z-20 relative md:top-5! top-6!"></div>
         </div>
       </div>
     </div>
