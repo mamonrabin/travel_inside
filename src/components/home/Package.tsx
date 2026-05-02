@@ -6,7 +6,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Package = () => {
   return (
-    <div className="Container mt-10 pb-10">
+    <div className="Container mt-10">
       <SectionHead
         title="ট্যুর প্যাকেজ সমূহ"
         description="বেছে নিন আপনার পছন্দের ট্যুর প্যাকেজ এবং শুরু করুন স্মরণীয় ভ্রমণের নতুন অভিজ্ঞতা।"
