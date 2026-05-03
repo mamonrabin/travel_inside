@@ -6,19 +6,20 @@ import type { Swiper as SwiperType } from "swiper";
 import { useRef } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
-import DestinationCard from "../cards/DestinationCard";
-import { destinationList } from "../api/destinationApi";
+import TeamCard from "@/src/cards/TeamCard";
+import { teamList } from "@/src/api/teamApi";
 
-const Destination = () => {
-    const swiperRef = useRef<SwiperType | null>(null);
-  return (
-    <div className="Container md:mt-10 mt-6 pb-10">
+const Team = () => {
+     const swiperRef = useRef<SwiperType | null>(null);
+    return (
+        <div className="Container md:mt-10 mt-6 pb-10">
       <SectionHead
-        title="জনপ্রিয় গন্তব্যসমূহ"
-        description="বাংলাদেশের সবচেয়ে আকর্ষণীয় পর্যটন স্থান ঘুরে আসুন"
+        title="আমাদের টিম মেম্বারসমূহ"
+        description="যাদের তত্ত্বাবধানে পরিচালিত হচ্ছে রংতুলি ট্রাভেলস"
       />
 
-      <div>
+
+       <div>
         <div className="relative md:mt-4 mt-2">
           <Swiper
             slidesPerView={1}
@@ -34,20 +35,21 @@ const Destination = () => {
             }}
             modules={[Autoplay, Pagination]}
             speed={800}
-            pagination={{ el: ".custom-pagination2", clickable: true }}
+            pagination={{ el: ".custom-pagination3", clickable: true }}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            {destinationList?.map((item) => (
+            {teamList?.map((item) => (
               <SwiperSlide key={item.id} className="">
-                <DestinationCard item={item}/>
+                <TeamCard item={item}/>
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="custom-pagination2  flex justify-center gap-1 z-20 relative md:top-5! top-6!"></div>
+          <div className="custom-pagination3  flex justify-center gap-1 z-20 relative md:top-5! top-6!"></div>
         </div>
       </div>
-    </div>
-  );
+            
+        </div>
+    );
 };
 
-export default Destination;
+export default Team;

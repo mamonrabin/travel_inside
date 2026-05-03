@@ -1,0 +1,53 @@
+"use client";
+import SectionHead from "@/src/share/SectionHead";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import type { Swiper as SwiperType } from "swiper";
+import { useRef } from "react";
+import "swiper/css";
+import "swiper/css/pagination";
+import DestinationCard from "../../cards/DestinationCard";
+import { destinationList } from "../../api/destinationApi";
+
+const Destination = () => {
+    const swiperRef = useRef<SwiperType | null>(null);
+  return (
+    <div className="Container md:mt-10 mt-6">
+      <SectionHead
+        title="জনপ্রিয় গন্তব্যসমূহ"
+        description="বাংলাদেশের সবচেয়ে আকর্ষণীয় পর্যটন স্থান ঘুরে আসুন"
+      />
+
+      <div>
+        <div className="relative md:mt-4 mt-2">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={8}
+            loop={true}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              700: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 4 },
+              1280: { slidesPerView: 4 },
+              1536: { slidesPerView: 4 },
+            }}
+            modules={[Autoplay, Pagination]}
+            speed={800}
+            pagination={{ el: ".custom-pagination2", clickable: true }}
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+          >
+            {destinationList?.map((item) => (
+              <SwiperSlide key={item.id} className="">
+                <DestinationCard item={item}/>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <div className="custom-pagination2  flex justify-center gap-1 z-20 relative md:top-5! top-6!"></div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Destination;
