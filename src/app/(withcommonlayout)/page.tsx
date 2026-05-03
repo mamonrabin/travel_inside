@@ -8,6 +8,7 @@ import WhyUs from '@/src/components/home/WhyUs';
 import WorkStep from '@/src/components/home/WorkStep';
 import React from 'react';
 import Team from '@/src/components/home/Team';
+import Reviews from '@/src/components/home/Reviews';
 
 const page = () => {
   return (
@@ -20,6 +21,7 @@ const page = () => {
       <WhyUs/>
       <Destination/>
       <Team/>
+      <Reviews/>
     </div>
   );
 };
