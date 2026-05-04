@@ -1,3 +1,5 @@
+import CopyRight from "@/src/components/footer/CopyRight";
+import Footer from "@/src/components/footer/Footer";
 import Navbar from "@/src/components/header/Navbar";
 
 export default async function layout({
@@ -9,7 +11,8 @@ export default async function layout({
     <div className="">
       <Navbar/>
       {children}
-      {/* <TopFooter/> */}
+      <Footer/>
+      <CopyRight/>
     </div>
   );
 }

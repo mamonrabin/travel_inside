@@ -6,8 +6,8 @@ import pack05 from "@/src/assets/package/package5.jpg"
 import pack06 from "@/src/assets/package/package6.jpg"
 import pack07 from "@/src/assets/package/package7.jpg"
 import pack08 from "@/src/assets/package/package8.jpg"
-// import pack09 from "@/src/assets/package/package9.jpg"
-// import pack010 from "@/src/assets/package/package10.jpg"
+import pack09 from "@/src/assets/package/package9.jpg"
+import pack10 from "@/src/assets/package/package10.jpg"
 
 
 export const packageList = [
@@ -92,14 +92,24 @@ export const packageList = [
         staycount:"৭ দিন ৪ রাত",
         
     },
-    // {
-    //     id: 9,
-    //     title: "রাজশাহী ট্যুর প্যাকেজ",
-    //     description: "রাজশাহী ট্যুর প্যাকেজ বাংলাদেশের একটি প্রতিষ্ঠিত পর্যটন স্থল, যা বিশ্বের সবচেয়ে বড় মহাসাগরীয় জঙ্গল।",
-    //     image: pack09,
-    //     place:"রাজশাহী",
-    //     price:"2,499",
-    //     trivalto:"ঢাকা - রাজশাহী",
-    //     staycount:"৫ দিন ৪ রাত",
-    // },
+    {
+        id: 9,
+        title: "রাজশাহী ট্যুর প্যাকেজ",
+        description: "রাজশাহী ট্যুর প্যাকেজ বাংলাদেশের একটি প্রতিষ্ঠিত পর্যটন স্থল, যা বিশ্বের সবচেয়ে বড় মহাসাগরীয় জঙ্গল।",
+        image: pack09,
+        place:"রাজশাহী",
+        price:"2,499",
+        trivalto:"ঢাকা - রাজশাহী",
+        staycount:"৫ দিন ৪ রাত",
+    },
+    {
+        id: 10,
+        title: "রাজশাহী ট্যুর প্যাকেজ",
+        description: "রাজশাহী ট্যুর প্যাকেজ বাংলাদেশের একটি প্রতিষ্ঠিত পর্যটন স্থল, যা বিশ্বের সবচেয়ে বড় মহাসাগরীয় জঙ্গল।",
+        image: pack10,
+        place:"রাজশাহী",
+        price:"2,499",
+        trivalto:"ঢাকা - রজশাহী",
+        staycount:"৫ দিন ৪ রাত",
+    },
 ]

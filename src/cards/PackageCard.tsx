@@ -64,8 +64,8 @@ const PackageCard = ({ items }: PackageCardProps) => {
             <p className="text-xs text-gray-400">শুরু হচ্ছে মাত্র : </p>{" "}
             <p className="text-lg font-bold text-[#55BEEF]">
               ৳{items.price}.00
-            </p>{" "}
-            <p className="text-xs text-gray-400">প্রতি ব্যক্তি</p>
+            </p>
+            <p className="text-xs text-gray-400 translate-y-1">/ প্রতি ব্যক্তি</p>
           </div>
 
           <button
