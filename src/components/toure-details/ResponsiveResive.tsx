@@ -16,7 +16,7 @@ const ResponsiveResive = () => {
 
       <SheetContent
         side="bottom"
-        className="h-[420px]! rounded-t-2xl px-6"
+        className="h-105! rounded-t-2xl px-6"
       >
         <BookReserve />
       </SheetContent>

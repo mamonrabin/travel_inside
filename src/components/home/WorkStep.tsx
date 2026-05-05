@@ -20,11 +20,11 @@ const WorkStep = () => {
       <div>
         <div className="relative md:mt-4 mt-2">
           <Swiper
-            slidesPerView={2}
+            slidesPerView={1}
             spaceBetween={8}
             loop={true}
             breakpoints={{
-              640: { slidesPerView: 2 },
+              640: { slidesPerView: 1 },
               700: { slidesPerView: 3 },
               768: { slidesPerView: 3 },
               1024: { slidesPerView: 4 },

@@ -3,6 +3,7 @@ import React from "react";
 import { roboto } from "../app/font";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import Link from "next/link";
 
 interface PackageCardProps {
   items: {
@@ -21,27 +22,29 @@ const PackageCard = ({ items }: PackageCardProps) => {
   return (
     <div className="border relative group border-[#262626]/10 rounded-md p-6 cursor-pointer">
       <div className=" overflow-hidden rounded">
-        <div className="overflow-hidden rounded relative">
-          <Image
-            src={items.image}
-            alt={items.title}
-            className="
+        <Link href={`/tour/${items.id}`}>
+          <div className="overflow-hidden rounded relative">
+            <Image
+              src={items.image}
+              alt={items.title}
+              className="
       w-full object-cover
       transition-all duration-700 ease-in-out
       group-hover:scale-110
       group-hover:rotate-1
     "
-          />
+            />
 
-          {/* Dark Overlay */}
-          <div
-            className="
+            {/* Dark Overlay */}
+            <div
+              className="
       absolute inset-0 bg-black/10
       transition-all duration-500
       group-hover:bg-black/25
     "
-          ></div>
-        </div>
+            ></div>
+          </div>
+        </Link>
 
         <div className="inline-flex flex-col absolute top-10 md:-left-5 -left-1">
           <p className="bg-[#262626] w-30 text-white font-bold text-sm inline-flex px-2 py-1">
@@ -54,7 +57,9 @@ const PackageCard = ({ items }: PackageCardProps) => {
         </div>
       </div>
       <div className="mt-3">
-        <h2 className="font-bold line-clamp-1">{items.title}</h2>
+        <Link href={`/tour/${items.id}`}>
+          <h2 className="font-bold line-clamp-1">{items.title}</h2>
+        </Link>
         <p className="text-gray-500 mt-1">{items.trivalto}</p>
 
         <div>
@@ -65,26 +70,30 @@ const PackageCard = ({ items }: PackageCardProps) => {
             <p className="text-lg font-bold text-[#55BEEF]">
               ৳{items.price}.00
             </p>
-            <p className="text-xs text-gray-400 translate-y-1">/ প্রতি ব্যক্তি</p>
+            <p className="text-xs text-gray-400 translate-y-1">
+              / প্রতি ব্যক্তি
+            </p>
           </div>
 
-          <button
-            className="relative overflow-hidden z-10 inline-flex items-center gap-1 mt-3 
+          <Link href={`/tour/${items.id}`}>
+            <button
+              className="relative overflow-hidden z-10 inline-flex items-center gap-1 mt-3 
   bg-[#55BEEF] text-white text-base font-medium px-4 py-3 rounded 
   transition-all duration-500 hover:text-white group cursor-pointer"
-          >
-            <span className="relative z-10 text-sm font-bold">আরো জানুন</span>
+            >
+              <span className="relative z-10 text-sm font-bold">আরো জানুন</span>
 
-            <span className="transform group-hover:translate-x-1 relative z-10 transition duration-300">
-              <IoIosArrowForward size={16} />
-            </span>
+              <span className="transform group-hover:translate-x-1 relative z-10 transition duration-300">
+                <IoIosArrowForward size={16} />
+              </span>
 
-            {/* Hover Background Effect */}
-            <span
-              className="absolute inset-0 bg-[#0f9ed8] scale-x-0 origin-left 
+              {/* Hover Background Effect */}
+              <span
+                className="absolute inset-0 bg-[#0f9ed8] scale-x-0 origin-left 
     transition-transform duration-500 group-hover:scale-x-100 z-0"
-            ></span>
-          </button>
+              ></span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

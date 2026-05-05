@@ -46,7 +46,7 @@ const Navbar = () => {
         {/* Auth Button */}
         <Link
           href="/login"
-          className="text-base font-semibold hover:text-[#8E191C] duration-300 md:flex hidden"
+          className="text-base font-semibold hover:text-[#1766D6] duration-300 md:flex hidden"
         >
           লগিন/রেজিষ্ট্রেশন
         </Link>
