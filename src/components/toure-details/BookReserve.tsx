@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const BookReserve = () => {
@@ -63,11 +64,11 @@ const BookReserve = () => {
         </div>
       </div>
 
-      <div>
+      <Link href="/book">
         <button className="w-full  cursor-pointer mt-6 bg-[#55BEEF] text-white font-semibold py-2 rounded hover:bg-[#3a8acb] transition-colors duration-300">
           বুক রিজার্ভ করুন
         </button>
-      </div>
+      </Link>
     </div>
   );
 };
