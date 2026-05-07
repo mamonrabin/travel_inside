@@ -6,20 +6,22 @@ import gig3 from "@/src/assets/gifs/plan.gif"
 export const facilityList = [
     {
         id:1,
-        icon:gig1
-,
+        icon:gig1,
+        link:"/inside-fight",       
         title:"অভ্যন্তরীণ ফ্লাইট",
         description:"দেশের যেকোনো প্রান্তে দ্রুততম সময়ে পৌঁছান। সকল দেশীয় এয়ারলাইন্সের টিকেট।"
     },
     {
         id:2,
         icon:gig2,
+        link:"/hotle-booking",   
         title:"হোটেল বুকিং",
         description:"সারাদেশে সাশ্রয়ী মূল্যে আরামদায়ক হোটেল বুকিং করুন।"
     },
     {
         id:3,
         icon:gig3,
+        link:"/tour",   
         title:"ট্যুর প্যাকেজ",
         description:"বাংলাদেশের সুন্দরতম স্থানগুলোতে সাজানো ট্যুর প্যাকেজ।"
     },

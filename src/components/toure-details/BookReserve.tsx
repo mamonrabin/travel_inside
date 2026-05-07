@@ -13,7 +13,7 @@ const BookReserve = () => {
   ];
 
   return (
-    <div className="mt-6 border rounded lg:p-6">
+    <div className="mt-6 border rounded xl:p-6 p-4">
       {/* Date Selection */}
       <div>
         <p className="font-semibold text-gray-500 pb-1">তারিখ নির্বাচন করুন</p>
@@ -29,7 +29,7 @@ const BookReserve = () => {
               />
               <label
                 htmlFor={`date-${index}`}
-                className="peer-checked:bg-[#55BEEF] peer-checked:text-white font-semibold px-2 py-2 border rounded border-gray-300 cursor-pointer transition-all duration-300"
+                className="peer-checked:bg-[#55BEEF] peer-checked:text-white text-sm text-gray-500 font-semibold px-2 py-2 border rounded border-gray-300 cursor-pointer transition-all duration-300"
               >
                 {date}
               </label>
@@ -44,7 +44,7 @@ const BookReserve = () => {
           ব্যক্তি নির্বাচন করুন
         </p>
 
-        <div className="flex  items-center gap-2  mt-2">
+        <div className="flex flex-wrap  items-center gap-2  mt-2">
           {personList.map((person, index) => (
             <div key={index}>
               <input
@@ -55,7 +55,7 @@ const BookReserve = () => {
               />
               <label
                 htmlFor={`person-${index}`}
-                className="peer-checked:bg-[#55BEEF] peer-checked:text-white font-semibold text-sm px-2 py-2 border rounded border-gray-300 cursor-pointer transition-all duration-300"
+                className="peer-checked:bg-[#55BEEF] text-gray-500 peer-checked:text-white font-semibold text-sm px-2 py-2 border rounded border-gray-300 cursor-pointer transition-all duration-300"
               >
                 {person}
               </label>

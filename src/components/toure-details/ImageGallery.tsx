@@ -11,6 +11,9 @@ import p6 from "@/src/assets/single/photo6.jpg";
 import p7 from "@/src/assets/single/photo6.jpg";
 import p8 from "@/src/assets/single/photo6.jpg";
 
+import AllImageSection from "./AllImageSection";
+
+
 const images = [p1, p3, p4, p5, p6, p7, p8];
 
 const ImageGallery = () => {
@@ -51,9 +54,9 @@ const ImageGallery = () => {
 
                 {/* Show all photos button */}
                 {index === 3 && (
-                  <button className="absolute z-50 lg:bottom-4 lg:top-auto -top-20 right-4 bg-[#55BEEF] text-white px-4 py-2 rounded text-sm font-medium hover:bg-[#1d88b9] duration-300 cursor-pointer">
-                    সব ছবি দেখুন
-                  </button>
+                  <div
+                    onClick={(e) => e.stopPropagation()}
+                  ><AllImageSection/></div>
                 )}
               </div>
             ))}

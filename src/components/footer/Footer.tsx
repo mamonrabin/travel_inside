@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { menuItems } from "@/src/share/MenuItems";
 import { MdOutlineEmail } from "react-icons/md";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -39,30 +40,37 @@ const Footer = () => {
           <h2 className="font-bold pb-4">দ্রুত লিংক</h2>
           <ul className="flex flex-col gap-1">
             {menuItems.map((item) => (
-              <li
-                key={item.name}
-                className="text-gray-300 hover:text-[#55BEEF] duration-300 cursor-pointer"
-              >
-                {item.name}
-              </li>
+              <Link href={item.path} key={item.name}>
+                <li className="text-gray-300 hover:text-[#55BEEF] duration-300 cursor-pointer">
+                  {item.name}
+                </li>
+              </Link>
             ))}
           </ul>
         </div>
         <div className="flex-1">
           <h2 className="font-bold pb-4">সেবাসমূহ</h2>
           <ul className="flex flex-col gap-1">
-            <li className="text-gray-300 hover:text-[#55BEEF] duration-300 cursor-pointer">
-              বাস টিকেট
-            </li>
-            <li className="text-gray-300 hover:text-[#55BEEF] duration-300 cursor-pointer">
-              অভ্যন্তরীন ফ্লাইট
-            </li>
-            <li className="text-gray-300 hover:text-[#55BEEF] duration-300 cursor-pointer">
-              হোটেল বুকিং
-            </li>
-            <li className="text-gray-300 hover:text-[#55BEEF] duration-300 cursor-pointer">
-              ট্যুর প্যাকেজ
-            </li>
+            <Link href="#">
+              <li className="text-gray-300 hover:text-[#55BEEF] duration-300 cursor-pointer">
+                বাস টিকেট
+              </li>
+            </Link>
+            <Link href="/inside-fight">
+              <li className="text-gray-300 hover:text-[#55BEEF] duration-300 cursor-pointer">
+                অভ্যন্তরীন ফ্লাইট
+              </li>
+            </Link>
+            <Link href="/hotle-booking">
+              <li className="text-gray-300 hover:text-[#55BEEF] duration-300 cursor-pointer">
+                হোটেল বুকিং
+              </li>
+            </Link>
+            <Link href="/tour">
+              <li className="text-gray-300 hover:text-[#55BEEF] duration-300 cursor-pointer">
+                ট্যুর প্যাকেজ
+              </li>
+            </Link>
           </ul>
         </div>
         <div className="flex-1">

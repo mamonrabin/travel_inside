@@ -24,16 +24,16 @@ const DayPlan = () => {
             className="w-full flex items-center justify-between text-left"
           >
             <div className="flex items-center w-full cursor-pointer">
-              <p className="px-4 py-4 bg-[#55BEEF] text-white text-lg font-semibold ">
+              <p className="px-4  py-2 bg-[#55BEEF] text-white text-base font-semibold ">
                 {item.day}
               </p>
 
-              <h2 className="text-lg font-semibold px-4 text-gray-700">
+              <h2 className="text-base font-semibold px-4 text-gray-700">
                 {item.title}
               </h2>
             </div>
 
-            <FaChevronDown
+            <FaChevronDown size={14}
               className={`mr-4 text-gray-500 transition-transform duration-300 ${
                 openId === item.id ? "rotate-180" : ""
               }`}
