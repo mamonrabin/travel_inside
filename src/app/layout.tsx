@@ -4,6 +4,7 @@ import "./globals.css";
 import { hindSiliguri } from "./font";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { Toaster } from "sonner";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -22,7 +23,10 @@ export default function RootLayout({
       lang="en"
       className={cn("antialiased", hindSiliguri.className, "font-sans", geist.variable)}
     >
-      <body className="">{children}</body>
+      <body className="">
+        {children}
+        <Toaster position="top-right" richColors />
+        </body>
     </html>
   );
 }

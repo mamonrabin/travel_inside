@@ -1,6 +1,7 @@
 import { packageList } from "@/src/api/packageApi";
 import PackageCard from "@/src/cards/PackageCard";
 import SectionHead from "@/src/share/SectionHead";
+import Link from "next/link";
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
@@ -17,25 +18,29 @@ const Package = () => {
         ))}
       </div>
 
-       <div className="flex items-center justify-center mt-6">
-            <button
-          className="relative overflow-hidden z-10 flex items-center justify-center gap-1 mt-3 
+      <div className="flex items-center justify-center mt-6">
+        <Link href="/tour">
+          <button
+            className="relative overflow-hidden z-10 flex items-center justify-center gap-1 mt-3 
                   bg-[#262626] text-white text-base font-medium px-4 py-3 rounded 
                   transition-all duration-500 hover:text-white group cursor-pointer"
-        >
-          <span className="relative z-10 text-sm font-bold">সব প্যাকেজ দেখুন</span>
+          >
+            <span className="relative z-10 text-sm font-bold">
+              সব প্যাকেজ দেখুন
+            </span>
 
-          <span className="transform group-hover:translate-x-1 relative z-10 transition duration-300">
-            <IoIosArrowForward size={16} />
-          </span>
+            <span className="transform group-hover:translate-x-1 relative z-10 transition duration-300">
+              <IoIosArrowForward size={16} />
+            </span>
 
-          {/* Hover Background Effect */}
-          <span
-            className="absolute inset-0 bg-[#FBB03B] scale-x-0 origin-left 
+            {/* Hover Background Effect */}
+            <span
+              className="absolute inset-0 bg-[#FBB03B] scale-x-0 origin-left 
                     transition-transform duration-500 group-hover:scale-x-100 z-0"
-          ></span>
-        </button>
-        </div>
+            ></span>
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };
