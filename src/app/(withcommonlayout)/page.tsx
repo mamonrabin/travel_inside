@@ -12,7 +12,7 @@ import Reviews from '@/src/components/home/Reviews';
 
 const page = () => {
   return (
-    <div>
+    <div className='mt-20'>
       <Banner/>
       <Facility/>
       <Package/>

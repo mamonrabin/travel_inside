@@ -3,7 +3,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="Container py-6">
+    <div className="Container mt-20 py-6">
       <SectionHead
         title="হোটেল বুকিং"
         description="সারাদেশে সাশ্রয়ী মূল্যে আরামদায়ক হোটেল বুকিং করুন।"

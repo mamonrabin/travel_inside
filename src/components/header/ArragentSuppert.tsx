@@ -20,8 +20,8 @@ const ArragentSuppert = () => {
       </PopoverTrigger>
       <PopoverContent align="end" className="rounded p-4 mt-2">
         <div className="flex flex-col gap-2">
-            <p className="flex items-center gap-2 font-semibold text-base"><span className="text-[#1766D6]"><TfiHeadphoneAlt size={16} /></span> <span>সাপোর্ট</span></p>
-            <p className="flex items-center gap-2 font-semibold text-base"><span className="text-base">⏰</span> <span>২৪/৭ কাস্টমার সাপোর্ট</span></p>
+            <p className="flex items-center gap-2 font-semibold text-base text-gray-600"><span className="text-[#1766D6]"><TfiHeadphoneAlt size={16} /></span> <span>সাপোর্ট</span></p>
+            <p className="flex items-center gap-2 font-semibold text-base text-gray-600"><span className="text-base">⏰</span> <span>২৪/৭ কাস্টমার সাপোর্ট</span></p>
         </div>
 
         <div className="flex flex-col gap-2">

@@ -46,7 +46,7 @@ const PackageCard = ({ items }: PackageCardProps) => {
           </div>
         </Link>
 
-        <div className="inline-flex flex-col absolute top-10 md:-left-5 -left-1">
+        <div className="inline-flex flex-col absolute top-10 md:-left-5 left-10">
           <p className="bg-[#262626] w-30 text-white font-bold text-sm inline-flex px-2 py-1">
             {items.staycount}
           </p>

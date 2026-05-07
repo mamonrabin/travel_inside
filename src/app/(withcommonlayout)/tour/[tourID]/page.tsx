@@ -5,7 +5,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="Container py-6">
+    <div className="Container mt-20 py-6">
       <div>
         <h2 className="text-xl font-medium">কক্সবাজার হল বাংলাদেশের একটি প্রতিষ্ঠিত সমুদ্রসৈকত</h2>
         <p className="mt-1 font-medium text-gray-500">ঢাকা - কক্সবাজার</p>

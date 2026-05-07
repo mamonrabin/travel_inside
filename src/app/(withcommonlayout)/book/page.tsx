@@ -4,7 +4,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="Container mt-6">
+    <div className="Container mt-25">
       <SectionHead
         title="চেকআউট"
         description="যাদের তত্ত্বাবধানে পরিচালিত হচ্ছে রংতুলি ট্রাভেলস, তাদের পরিচিতি এবং অভিজ্ঞতা সম্পর্কে জানুন"

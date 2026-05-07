@@ -2,7 +2,7 @@ import React from 'react';
 
 const BookForm = () => {
     return (
-        <div className='border p-8 rounded'>
+        <div className='border md:px-8 md:py-8 p-4 rounded'>
             <h2 className='text-lg font-semibold'>ব্যক্তিগত তথ্য</h2>
 
             <form className='mt-4 flex flex-col gap-2'>

@@ -15,7 +15,7 @@ const AllImageSection = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <button className="absolute flex items-center gap-1 z-50 lg:bottom-4 lg:top-auto -top-20 right-4 bg-[#55BEEF] text-white px-4 py-2 rounded text-sm font-medium hover:bg-[#1d88b9] duration-300 cursor-pointer">
+        <button className="absolute flex items-center gap-1 z-40 lg:bottom-4 lg:top-auto -top-20 right-4 bg-[#55BEEF] text-white px-4 py-2 rounded text-sm font-medium hover:bg-[#1d88b9] duration-300 cursor-pointer">
           <CgMenuGridR size={16} />
           সব ছবি দেখুন
         </button>
@@ -29,7 +29,7 @@ const AllImageSection = () => {
                 src={item}
                 alt={`gallery-${index}`}
                 width={320} height={320}
-                className="rounded"
+                className="rounded w-full h-full"
               />
             </div>
           ))}

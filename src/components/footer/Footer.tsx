@@ -16,7 +16,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="Container bg-[#262626] py-12 text-white">
-      <div className="flex flex-wrap gap-8">
+      <div className="flex flex-wrap md:gap-8 gap-9">
         <div className="flex-2">
           <Image src={logo} alt="Logo" width={150} height={50} />
           <p className="w-80 mt-4 text-gray-300">

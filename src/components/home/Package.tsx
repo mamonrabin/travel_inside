@@ -11,7 +11,7 @@ const Package = () => {
         title="ট্যুর প্যাকেজ সমূহ"
         description="বেছে নিন আপনার পছন্দের ট্যুর প্যাকেজ এবং শুরু করুন স্মরণীয় ভ্রমণের নতুন অভিজ্ঞতা।"
       />
-      <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-8 mt-3">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mt-3">
         {packageList?.slice(0, 6).map((items) => (
           <PackageCard key={items.id} items={items} />
         ))}

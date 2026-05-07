@@ -7,7 +7,7 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 
 const page = () => {
   return (
-    <div className="Container mt-6 pb-10">
+    <div className="Container mt-25 pb-10">
       <SectionHead
         title="যোগাযোগ"
         description="আপনার যেকোনো প্রশ্ন বা সহায়তার জন্য আমরা সবসময় প্রস্তুত। আমাদের সাথে যোগাযোগ করুন এবং আপনার ভ্রমণ পরিকল্পনা শুরু করুন।"

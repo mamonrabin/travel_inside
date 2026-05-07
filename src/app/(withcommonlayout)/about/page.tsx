@@ -6,7 +6,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="mt-6 pb-10">
+    <div className="mt-25 pb-10">
       
         <SectionHead
           title="আমাদের সম্পর্কে"
